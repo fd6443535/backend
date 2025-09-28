@@ -29,7 +29,7 @@ const app = express();
 // Security and middleware
 // Allow the mobile demo (http://localhost:3002) to call APIs with cookies
 const corsOptions = {
-  origin: ['http://localhost:3002'],
+  origin: ['http://localhost:3002','https://templates-sample-123.vercel.app'],
   credentials: true,
 };
 app.use(cors(corsOptions));
@@ -251,3 +251,4 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
+
